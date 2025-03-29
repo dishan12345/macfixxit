@@ -1,0 +1,43 @@
+<nav class="navbar">
+    <ul class="menu">
+      <!-- Home Link -->
+      <li><a routerLink="/">Home</a></li>
+  
+      <!-- Services with Submenu -->
+      <li class="menu-item"
+          (mouseenter)="showMenu('services')"
+          (mouseleave)="hideMenu('services')">
+        <a href="#">Services ▾</a>
+        <ul *ngIf="activeMenu === 'services'" class="submenu">
+          <li><a routerLink="/iPhone-repair">iPhone Repair</a></li>
+          <li><a routerLink="/iPad-repair">iPad Repair</a></li>
+          <li><a routerLink="/macbook">MacBook Repair</a></li>
+          <li><a routerLink="/imac">iMac Repair</a></li>
+          <li><a routerLink="/apple-watch">Apple Watch Repair</a></li>
+          <li><a routerLink="/iPod">iPod Repair</a></li>
+        </ul>
+      </li>
+  
+      <!-- Schedule Repair with Submenu -->
+      <li class="menu-item"
+          (mouseenter)="showMenu('schedule')"
+          (mouseleave)="hideMenu('schedule')">
+        <a href="#">Schedule Repair ▾</a>
+        <ul *ngIf="activeMenu === 'schedule'" class="submenu">
+          <li><a routerLink="/pickup">Schedule a Pickup</a></li>
+          <li><a routerLink="/onsite">Schedule Onsite Repair</a></li>
+          <li><a routerLink="/pricing">Get Pricing for Repair</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"
+          (mouseenter)="showMenu('about')"
+          (mouseleave)="hideMenu('about')">
+        <a href="#">About ▾</a>
+        <ul *ngIf="activeMenu === 'about'" class="submenu">
+          <li><a routerLink="/about">About</a></li>
+          <li><a routerLink="/contact-us">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  

@@ -1,0 +1,307 @@
+<app-header></app-header><br>
+<h1>Instant Quote with Pricing for Repair</h1><br>
+<div class="container main">
+
+    <p></p>
+
+    <p></p>
+
+    <!--- =========================================================================================== -->
+
+    <div class="row">
+
+        <div class="col-md-1"></div>
+
+        <div class="col-md-2">
+            <h5> <label for="ddlDevice" class="control-label text-left">Device</label> </h5>
+        </div>
+
+        <div class="col-md-3">
+            <select name="ctl00$ContentPlaceHolder$ddlDevice"
+                onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder$ddlDevice\',\'\')', 0)"
+                id="ContentPlaceHolder_ddlDevice" class="form-control textbox-space-vert">
+                <option selected="selected" value="">Select Device</option>
+                <option value="1">Smartphone</option>
+                <option value="2">Tablet</option>
+                <option value="3">Laptop</option>
+                <option value="4">Appliance</option>
+                <option value="5">Accessory</option>
+                <option value="6">Security</option>
+                <option value="7">Service</option>
+
+            </select>
+        </div>
+
+        <!-- <div class="col-md-1"></div> -->
+
+        <!-- <div class="col-md-2">
+            <h5> <label for="ddlMake" class="control-label text-left">Make</label> </h5>
+        </div> -->
+
+        <!-- <div class="col-md-3">
+            <select name="ctl00$ContentPlaceHolder$ddlMake" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder$ddlMake\',\'\')', 0)" id="ContentPlaceHolder_ddlMake" class="form-control textbox-space-vert">
+		<option selected="selected" value="">Select Make</option> -->
+
+        <!-- </select> -->
+        <!-- </div> -->
+
+        <!-- </div> -->
+
+        <p></p>
+
+        <!--- =========================================================================================== -->
+
+        <div class="row">
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-2">
+                <h5> <label for="ddlModel" class="control-label text-left">Model</label> </h5>
+            </div>
+
+            <div class="col-md-3">
+                <select name="ctl00$ContentPlaceHolder$ddlModel"
+                    onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder$ddlModel\',\'\')', 0)"
+                    id="ContentPlaceHolder_ddlModel" class="form-control textbox-space-vert">
+                    <option selected="selected" value="">Select Model</option>
+
+                </select>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-2">
+                <h5> <label for="ddlIssue1" class="control-label text-right">Issue</label> </h5>
+            </div>
+
+            <div class="col-md-3">
+                <select name="ctl00$ContentPlaceHolder$ddlIssue1" id="ContentPlaceHolder_ddlIssue1"
+                    class="form-control input-lg">
+                    <option value="">Select Issue</option>
+                    <option value="Damaged Display">Damaged Display</option>
+                    <option value="Display Touch not Working">Display Touch not Working</option>
+                    <option value="Lines or Flicker on Display">Lines or Flicker on Display</option>
+                    <option value="Keyboard Issue">Keyboard Issue</option>
+                    <option value="Trackpad Issue">Trackpad Issue</option>
+                    <option value="Hard Disk Issue">Hard Disk Issue</option>
+                    <option value="Not Booting">Not Booting</option>
+                    <option value="Home Button not Working">Home Button Not Working</option>
+                    <option value="On-Off or Volume Buttons not Working">On-Off or Volume Buttons not Working</option>
+                    <option value="No RF or GSM Network">No RF or GSM Network</option>
+                    <option value="3G-4G Mobile Data not Working">3G-4G Mobile Data not Working</option>
+                    <option value="Wi-Fi or BlueTooth not Working">Wi-Fi or BlueTooth not Working</option>
+                    <option value="Low or No Earpiece Audio">Low or No Earpiece Audio</option>
+                    <option value="Mic not Working">Mic not Working</option>
+                    <option value="Front Camera not Working">Front Camera not Working</option>
+                    <option value="Rear Camera not Working">Rear Camera not Working</option>
+                    <option value="Battery Bloated">Battery Bloated</option>
+                    <option value="Battery Draining">Battery Draining</option>
+                    <option value="Battery Not Charging">Battery Not Charging</option>
+                    <option value="Device Overheating">Device Overheating</option>
+                    <option value="Water Damage">Water Damage</option>
+                    <option value="Device Dead">Device Dead</option>
+
+                </select>
+            </div>
+
+        </div>
+
+        <p></p>
+
+
+        <!--- =========================================================================================== -->
+
+        <div class="row">
+
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-2">
+                <h5> <label for="ddlPart" class="control-label text-left">Part</label> </h5>
+            </div>
+
+            <div class="col-md-3">
+                <select name="ctl00$ContentPlaceHolder$ddlPart"
+                    onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder$ddlPart\',\'\')', 0)"
+                    id="ContentPlaceHolder_ddlPart" class="form-control textbox-space-vert">
+                    <option selected="selected" value="">Select Part</option>
+
+                </select>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-2">
+                <h5> <label for="Postal_Code" class="control-label text-left">Location</label> </h5>
+            </div>
+
+            <div class="col-md-3">
+                <select name="ctl00$ContentPlaceHolder$ddlLocation" id="ContentPlaceHolder_ddlLocation"
+                    class="form-control input-lg">
+                    <option value="">Select PIN Code</option>
+                    <option value="400012 ISC-MHM Parel">400012 Parel</option>
+                    <option value="400013 ISC-MHM Lower Parel">400012 Lower Parel</option>
+                    <option value="400014 ISC-MHM Dadar East">400014 Dadar East</option>
+                    <option value="400016 ISC-MHM Mahim East">400016 Mahim East</option>
+                    <option value="400016 ISC-MHM Mahim West">400016 Mahim West</option>
+                    <option value="400016 ISC-MHM Matunga West">400016 Matunga West</option>
+                    <option value="400018 ISC-MHM Worli West">400018 Worli West</option>
+                    <option value="400018 ISC-MHM Worli East">400018 Worli East</option>
+                    <option value="400019 ISC-MHM Matunga East">400019 Matunga East</option>
+                    <option value="400022 ISC-MHM Sion">400022 Sion</option>
+                    <option value="400025 ISC-MHM Prabhadevi West">400025 Prabhadevi West</option>
+                    <option value="400025 ISC-MHM Prabhadevi East">400025 Prabhadevi East</option>
+                    <option value="400028 ISC-MHM Dadar West">400028 Dadar West</option>
+                    <option value="400030 ISC-MHM Worli">400030 Worli</option>
+                    <option value="400031 ISC-MHM Wadala">400031 Wadala</option>
+                    <option value="400049 ISC-JVP Juhu">400049 Juhu</option>
+                    <option value="400050 ISC-MHM Bandra West">400050 Bandra West</option>
+                    <option value="400051 ISC-MHM Bandra East">400051 Bandra East</option>
+                    <option value="400051 ISC-VPL Khar East">400051 Khar East</option>
+                    <option value="400052 ISC-JVP Khar West">400052 Khar West</option>
+                    <option value="400053 ISC-OSH Andheri West">400053 Andheri West</option>
+                    <option value="400054 ISC-JVP Santacruz West">400054 Santacruz West</option>
+                    <option value="400055 ISC-VPL Santacruz East">400055 Santacruz East</option>
+                    <option value="400056 ISC-JVP Vile Parle West">400056 Vile Parle West</option>
+                    <option value="400057 ISC-VPL Vile Parle East">400057 Vile Parle East</option>
+                    <option value="400058 ISC-OSH Andheri West">400058 Andheri West</option>
+                    <option value="400059 ISC-PWI Andheri East">400059 Andheri East</option>
+                    <option value="400060 ISC-OSH Jogeshwari East">400060 Jogeshwari East</option>
+                    <option value="400062 ISC-MLD Goregaon West">400062 Goregaon West</option>
+                    <option value="400063 ISC-MLD Goregaon East">400063 Goregaon East</option>
+                    <option value="400064 ISC-MLD Malad West">400064 Malad West </option>
+                    <option value="400066 ISC-KVL Borivali East">400066 Borivali East</option>
+                    <option value="400067 ISC-KVL Kandivali West">400067 Kandivali West</option>
+                    <option value="400068 ISC-BDR Dahisar West">400068 Dahisar West</option>
+                    <option value="400068 ISC-BDR Dahisar East">400068 Dahisar East</option>
+                    <option value="400069 ISC-PWI Andheri East">400069 Andheri East</option>
+                    <option value="400076 ISC-PWI Powai">400076 Powai</option>
+                    <option value="400091 ISC-KVL Borivali">400091 Borivali</option>
+                    <option value="400092 ISC-KVL Borivali West">400092 Borivali West</option>
+                    <option value="400093 ISC-PWI Chakala">400093 Chakala</option>
+                    <option value="400097 ISC-MLD Malad East">400097 Malad East</option>
+                    <option value="400101 ISC-KVL Kandivali East">400101 Kandivali East</option>
+                    <option value="400102 ISC-OSH Jogeshwari West">400102 Jogeshwari West</option>
+                    <option value="400104 ISC-MLD Goregaon West">400104 Goregaon West</option>
+                    <option value="401101 ISC-BDR Bhayandar West">401101 Bhayandar West</option>
+                    <option value="401105 ISC-BDR Bhayandar East">401105 Bhayandar East</option>
+                    <option value="401107 ISC-BDR Mira Road">401107 Mira Road</option>
+                    <option value="401202 ISC-BDR Vasai West">401202 Vasai West</option>
+                    <option value="401203 ISC-BDR Nalasopara West">401203 Nalasopara West</option>
+                    <option value="401208 ISC-BDR Vasai East">401208 Vasai East</option>
+                    <option value="401209 ISC-BDR Nalasopara East">401209 Nalasopara East</option>
+                    <option value="401303 ISC-BDR Virar">401303 Virar</option>
+
+                </select>
+            </div>
+
+        </div>
+
+        <p></p>
+
+
+        <!--- =========================================================================================== -->
+
+        <div class="row">
+
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-2">
+                <h5> <label for="First_Name" class="control-label text-left">Name</label> </h5>
+            </div>
+
+            <div class="col-md-3">
+                <input name="ctl00$ContentPlaceHolder$First_Name" type="text" id="ContentPlaceHolder_First_Name"
+                    onchange="changeToSentenceCase(this.id)" class="form-control input-lg">
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-2">
+                <h5> <label for="Mobile" class="control-label text-left">Mobile</label> </h5>
+            </div>
+
+            <div class="col-md-3">
+                <input name="ctl00$ContentPlaceHolder$Mobile" type="text" id="ContentPlaceHolder_Mobile"
+                    class="form-control input-lg">
+            </div>
+
+        </div>
+
+        <p></p>
+
+
+        <!--- ================================================================================================= -->
+
+        <hr>
+
+        <!--- ================================================================================================= -->
+
+        <div class="row">
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-2">
+                <h5> <label for="Incl_GST_Price" class="control-label text-left">Price</label> </h5>
+            </div>
+
+            <div class="col-md-3">
+                <input name="ctl00$ContentPlaceHolder$Incl_GST_Price" type="text" readonly="readonly"
+                    id="ContentPlaceHolder_Incl_GST_Price" class="form-control input-lg">
+            </div>
+
+            <div class="col-md-6"></div>
+
+        </div>
+
+        <p></p>
+
+        <!--- ================================================================================================= -->
+
+        <hr>
+
+        <!--- ================================================================================================= -->
+
+        <div class="row row-mt">
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-4">
+                <input type="button" name="ctl00$ContentPlaceHolder$Pricing_Button" value="Get Pricing"
+                    onclick="javascript:__doPostBack('ctl00$ContentPlaceHolder$Pricing_Button','')"
+                    id="ContentPlaceHolder_Pricing_Button" class="btn btn-primary" style="height:50px;width:275px;">
+            </div>
+
+            <div class="col-md-2">
+                <h5> <label for="Butt_Space" class="control-label text-left"> </label> </h5>
+            </div>
+
+            <div class="col-md-4">
+                <input type="button" name="ctl00$ContentPlaceHolder$Button1" value="Exit"
+                    onclick="javascript:__doPostBack('ctl00$ContentPlaceHolder$Button1','')"
+                    id="ContentPlaceHolder_Button1" class="btn btn-primary" style="height:50px;width:275px;">
+            </div>
+
+            <div class="col-md-1">
+            </div>
+
+        </div>
+
+        <!--- ======================================================================================== -->
+
+        <hr>
+
+
+
+
+
+        <!--- ======================================================================================== -->
+
+        <hr>
+
+
+
+    </div>
+</div>
+<app-footer></app-footer>

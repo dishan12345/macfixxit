@@ -1,0 +1,97 @@
+<div class="container my-5">
+    <form [formGroup]='repairForm' (ngSubmit)="onSubmit()">
+        <h1>We Will Remember You</h1><br><br><br>
+      <!-- Name Field -->
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          formControlName="name"
+          [ngClass]="{ 'is-invalid': repairForm.get('name')?.invalid && repairForm.get('name')?.touched }"
+        />
+        <div class="invalid-feedback" *ngIf="repairForm.get('name')?.hasError('required')">
+          Name is required.
+        </div>
+        <div class="invalid-feedback" *ngIf="repairForm.get('name')?.hasError('minlength')">
+          Name must be at least 3 characters long.
+        </div>
+      </div>
+  
+      <!-- Email Field -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          formControlName="email"
+          [ngClass]="{ 'is-invalid': repairForm.get('email')?.invalid && repairForm.get('email')?.touched }"
+        />
+        <div class="invalid-feedback" *ngIf="repairForm.get('email')?.hasError('required')">
+          Email is required.
+        </div>
+        <div class="invalid-feedback" *ngIf="repairForm.get('email')?.hasError('email')">
+          Please enter a valid email.
+        </div>
+      </div>
+  
+      <!-- Phone Field -->
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          class="form-control"
+          formControlName="phone"
+          [ngClass]="{ 'is-invalid': repairForm.get('phone')?.invalid && repairForm.get('phone')?.touched }"
+        />
+        <div class="invalid-feedback" *ngIf="repairForm.get('phone')?.hasError('required')">
+          Phone number is required.
+        </div>
+        <div class="invalid-feedback" *ngIf="repairForm.get('phone')?.hasError('pattern')">
+          Please enter a valid 10-digit phone number.
+        </div>
+      </div>
+  
+      <!-- Device Selection -->
+      <div class="mb-3">
+        <label for="device" class="form-label">Device</label>
+        <select
+          id="device"
+          class="form-select"
+          formControlName="device"
+          [ngClass]="{ 'is-invalid': repairForm.get('device')?.invalid && repairForm.get('device')?.touched }"
+        >
+          <option value="" disabled>Select a device</option>
+          <option *ngFor="let device of devices" [value]="device">{{ device }}</option>
+        </select>
+        <div class="invalid-feedback">Please select a device.</div>
+      </div>
+  
+      <!-- Issue Description -->
+      <div class="mb-3">
+        <label for="issue" class="form-label">Describe the Issue</label>
+        <textarea
+          id="issue"
+          class="form-control"
+          rows="4"
+          formControlName="issue"
+          [ngClass]="{ 'is-invalid': repairForm.get('issue')?.invalid && repairForm.get('issue')?.touched }"
+        ></textarea>
+        <div class="invalid-feedback" *ngIf="repairForm.get('issue')?.hasError('required')">
+          Issue description is required.
+        </div>
+        <div class="invalid-feedback" *ngIf="repairForm.get('issue')?.hasError('minlength')">
+          Description must be at least 10 characters long.
+        </div>
+      </div>
+  
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-secondary w-100" [disabled]="repairForm.invalid">
+        Submit
+      </button>
+    </form>
+  </div>
+  
